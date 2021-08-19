@@ -1,0 +1,14 @@
+name: 'Flutter Cache Buster'
+description: 'Add flutter cache busting to built project'
+inputs:
+  build-path:
+    description: 'The path where the built project is located'
+    required: false
+    default: './build/web'
+  version:
+    description: 'The version number'
+    required: false
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
