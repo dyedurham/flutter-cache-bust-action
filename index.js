@@ -19,8 +19,9 @@ try {
     const jsPath = `${buildPath}/main.dart.js`;
     const flutterServiceWorkerPath = `${buildPath}/flutter_service_worker.js`;
 
-    fs.rename(jsPath, `${buildPath}/${filename}`);
-    console.log(`Renaming main.dart.js to ${filename}`);
+    fs.rename(jsPath, `${buildPath}/${filename}`, () => {
+        console.log(`Renamed main.dart.js to ${filename}`);
+    });
 
     const options = {
         files: [ htmlPath, flutterServiceWorkerPath ],
