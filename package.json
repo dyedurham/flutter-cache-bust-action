@@ -13,6 +13,6 @@
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
     "fs": "0.0.1-security",
-    "replace-in-file": "^6.2.0"
+    "replace-in-file": "^8.4.0"
   }
 }
